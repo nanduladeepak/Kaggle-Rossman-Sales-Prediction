@@ -19,3 +19,6 @@ Professor. Hani Hagras
 GLAs
 ...
 
+
+#tensarflow for mac
+https://developer.apple.com/metal/tensorflow-plugin/
