@@ -1,12 +1,7 @@
 import pandas as pd
-from sklearn import preprocessing
 import numpy as np
 import tensorflow as tf
 tf.compat.v1.disable_v2_behavior()
-from sklearn.preprocessing import MinMaxScaler
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
 from keras.layers import Dropout
 import matplotlib.pyplot as plt
 
@@ -57,9 +52,6 @@ model.add(tf.keras.layers.Dropout(0.2))
 # Adding a fourth LSTM layer and some Dropout regularisation
 model.add(tf.keras.layers.LSTM(units = 200,return_sequences=True,activation='relu'))
 model.add(tf.keras.layers.Dropout(0.2))
-
-# model.add(tf.keras.layers.LSTM(units = 100,activation='relu'))
-# model.add(tf.keras.layers.Dropout(0.2))
 
 # Adding the output layer
 
