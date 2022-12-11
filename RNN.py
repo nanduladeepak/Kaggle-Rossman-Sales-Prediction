@@ -8,7 +8,6 @@ from keras.layers import LSTM
 from keras.layers import Dropout
 import matplotlib.pyplot as plt
 data = pd.read_csv('trainMergeReady.csv')
-data.iloc[:,2:].head()
 from sklearn.model_selection import train_test_split
 
 numeric_cols = ['Store', 'DayOfWeek', 

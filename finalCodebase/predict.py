@@ -19,7 +19,7 @@ dataCleaned = dataCleaned.reshape((dataCleaned.shape[0], 1, dataCleaned.shape[1]
 
 
 
-model = tf.keras.models.load_model('rnnTestTanhModel_hd')
+model = tf.keras.models.load_model('classifier_hd')
 output = model.predict(dataCleaned)
 output_denorm = np.exp(output)
 kaggeleOutput = data[['Id']].copy()
